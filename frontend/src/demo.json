@@ -1,0 +1,184 @@
+{
+  "username": "example-account",
+  "revision": 3,
+  "last_sync": "2026-10-06T12:00:00+00:00",
+  "followers": [
+    {
+      "relation": "followers",
+      "id": 6,
+      "login": "sample-contributor",
+      "first_seen": "2026-10-06T12:00:00+00:00"
+    },
+    {
+      "relation": "followers",
+      "id": 4,
+      "login": "sample-engineer",
+      "first_seen": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "relation": "followers",
+      "id": 5,
+      "login": "sample-researcher",
+      "first_seen": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "relation": "followers",
+      "id": 1,
+      "login": "sample-analyst",
+      "first_seen": "2026-10-02T12:00:00+00:00"
+    }
+  ],
+  "following": [
+    {
+      "relation": "following",
+      "id": 8,
+      "login": "sample-reviewer",
+      "first_seen": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "relation": "following",
+      "id": 7,
+      "login": "sample-maintainer",
+      "first_seen": "2026-10-02T12:00:00+00:00"
+    }
+  ],
+  "lost": [
+    {
+      "id": 3,
+      "login": "sample-designer",
+      "lost_at": "2026-10-06T12:00:00+00:00"
+    },
+    {
+      "id": 2,
+      "login": "sample-builder",
+      "lost_at": "2026-10-04T12:00:00+00:00"
+    }
+  ],
+  "events": [
+    {
+      "id": 10,
+      "revision": 3,
+      "relation": "followers",
+      "github_id": 6,
+      "login": "sample-contributor",
+      "kind": "added",
+      "observed_at": "2026-10-06T12:00:00+00:00"
+    },
+    {
+      "id": 9,
+      "revision": 3,
+      "relation": "followers",
+      "github_id": 3,
+      "login": "sample-designer",
+      "kind": "removed",
+      "observed_at": "2026-10-06T12:00:00+00:00"
+    },
+    {
+      "id": 8,
+      "revision": 2,
+      "relation": "following",
+      "github_id": 8,
+      "login": "sample-reviewer",
+      "kind": "added",
+      "observed_at": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "id": 7,
+      "revision": 2,
+      "relation": "followers",
+      "github_id": 5,
+      "login": "sample-researcher",
+      "kind": "added",
+      "observed_at": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "id": 6,
+      "revision": 2,
+      "relation": "followers",
+      "github_id": 4,
+      "login": "sample-engineer",
+      "kind": "added",
+      "observed_at": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "id": 5,
+      "revision": 2,
+      "relation": "followers",
+      "github_id": 2,
+      "login": "sample-builder",
+      "kind": "removed",
+      "observed_at": "2026-10-04T12:00:00+00:00"
+    },
+    {
+      "id": 4,
+      "revision": 1,
+      "relation": "following",
+      "github_id": 7,
+      "login": "sample-maintainer",
+      "kind": "baseline",
+      "observed_at": "2026-10-02T12:00:00+00:00"
+    },
+    {
+      "id": 3,
+      "revision": 1,
+      "relation": "followers",
+      "github_id": 3,
+      "login": "sample-designer",
+      "kind": "baseline",
+      "observed_at": "2026-10-02T12:00:00+00:00"
+    },
+    {
+      "id": 2,
+      "revision": 1,
+      "relation": "followers",
+      "github_id": 2,
+      "login": "sample-builder",
+      "kind": "baseline",
+      "observed_at": "2026-10-02T12:00:00+00:00"
+    },
+    {
+      "id": 1,
+      "revision": 1,
+      "relation": "followers",
+      "github_id": 1,
+      "login": "sample-analyst",
+      "kind": "baseline",
+      "observed_at": "2026-10-02T12:00:00+00:00"
+    }
+  ],
+  "repositories": [
+    {
+      "id": 101,
+      "name": "signal-kit",
+      "language": "Python",
+      "stars": 42,
+      "forks": 8,
+      "issues": 2
+    },
+    {
+      "id": 102,
+      "name": "dataset-audit",
+      "language": "TypeScript",
+      "stars": 28,
+      "forks": 5,
+      "issues": 1
+    },
+    {
+      "id": 103,
+      "name": "notes-core",
+      "language": "Python",
+      "stars": 16,
+      "forks": 3,
+      "issues": 0
+    },
+    {
+      "id": 104,
+      "name": "web-console",
+      "language": "TypeScript",
+      "stars": 11,
+      "forks": 2,
+      "issues": 3
+    }
+  ],
+  "source": "fixture"
+}
