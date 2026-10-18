@@ -4,6 +4,15 @@ An original, single-account GitHub audience tracker with durable snapshots, appe
 
 **Status: tested reference implementation.** Core and browser checks pass; one real public GitHub REST sync was verified. The public Pages dashboard uses fictional data, not your account snapshot. A hosted private API, unattended scheduling, production load and disaster recovery have not been verified.
 
+## Public Demo
+
+[Open the public audience workspace](https://sushant-ai-demos.pages.dev/gitpulse/)
+on Cloudflare Pages. It remains accessible when the maintainer's computer is off.
+The dashboard uses fictional sample data; private account snapshots, sync APIs
+and credentials are not exposed.
+[GitHub Pages fallback](https://sushant-nemade.github.io/gitpulse/) |
+[All project demos](https://sushant-ai-demos.pages.dev/).
+
 ## Provenance and Licensing
 
 The functional concept was selected from [AI Project Gallery](https://github.com/KalyanM45/AI-Project-Gallery), referencing [KalyanM45/GitPulse](https://github.com/KalyanM45/GitPulse) at `8af259174045fce5c081b36e36b407df82834823`.
