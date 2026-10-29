@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "repository": "Sushant-Nemade/gitpulse",
+  "source_sha": "99ab776b205972d320e242a2d8d1908595ac1148",
+  "berlin_date": "2026-10-29",
+  "run_id": "40920516453",
+  "status": "no-safe-change",
+  "stages": [
+    {
+      "name": "baseline-unit-and-integration",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "exit_code": 0,
+      "junit": {
+        "cases": 20,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 20
+      },
+      "evidence_sha256": "47102ab961a38d347597efb188b0c8ec4a734f95bd74d8e6db1f4602d1a766d8"
+    },
+    {
+      "name": "baseline-integration",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests/test_api.py"
+      ],
+      "exit_code": 0,
+      "junit": {
+        "cases": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 6
+      },
+      "evidence_sha256": "554877930371c736a1401d4e545200b13195e070b570bdb68d18460c8682efe9"
+    }
+  ],
+  "model": {
+    "name": "Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+    "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "license": "Apache-2.0",
+    "paid_api_requests": 0
+  },
+  "policy": {
+    "human_merge_required": false,
+    "automatic_production_merge": true,
+    "max_repairs": 2,
+    "max_generation_calls": 7,
+    "per_call_token_limit": 1700,
+    "max_pipeline_seconds": 2700,
+    "independent_ci_required": true
+  },
+  "load": {
+    "repository": "Sushant-Nemade/gitpulse",
+    "scope": "Owned local regression journeys; Docker network isolation is enforced by the controller, not this script",
+    "profile": "authenticated local state and health API",
+    "node": "tests/test_api.py::ApiTests::test_authenticated_state_and_public_health",
+    "requested_workflows": 1000,
+    "observed": 1000,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "concurrency": 1,
+    "duration_seconds": 7.160621120999991,
+    "cpu_process_seconds": 7.446906902,
+    "journey_p95_ms": 6.81259549998714,
+    "journey_p99_ms": 7.815732230019989,
+    "http_request_count": null,
+    "limitations": "Serial repeated regression journeys, NOT simultaneous users/browsers or a production capacity SLA. Test-defined mocks/fixtures remain in effect. HTTP requests are not independently counted.",
+    "passed": true
+  },
+  "planning": {
+    "decision": {
+      "status": "candidate",
+      "summary": "The `__post_init__` method does not check if the `login` attribute is a string."
+    },
+    "provenance": {
+      "role": "planning",
+      "engine": "llama.cpp CPU, no-network container",
+      "max_output_tokens": 1700,
+      "model_repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+      "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+      "response_sha256": "c2bb5e03ae0e1e3d92ee725a8dfc091422a04b12852778021a11ea22d19ca461",
+      "response_bytes": 141
+    }
+  },
+  "author": {
+    "role": "author",
+    "engine": "llama.cpp CPU, no-network container",
+    "max_output_tokens": 1700,
+    "model_repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+    "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "response_sha256": "a35fa254d78490a2084170fad143e314e02ddfa1ce979f3c3a41833a847edac2",
+    "response_bytes": 1092
+  },
+  "detail": "The `__post_init__` method does not check if the `login` attribute is a string.",
+  "duration_seconds": 280.644110819,
+  "generated_at_utc": "2026-10-29T17:26:30.491674+00:00",
+  "published_at_utc": "2026-10-29T17:26:52.384592+00:00",
+  "run_url": "https://github.com/Sushant-Nemade/gitpulse/actions/runs/40920516453"
+}
